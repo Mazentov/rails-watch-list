@@ -47,6 +47,12 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
+
+  # RSpec is a testing framework for Ruby [https://rspec.info/]
+  gem 'rspec-rails', group: [:test]
+
+  # Rails controller testing [https://github.com/rails/rails-controller-testing]
+  gem 'rails-controller-testing', group: [:test]
 end
 
 group :development do
