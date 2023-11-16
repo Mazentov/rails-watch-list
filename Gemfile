@@ -53,6 +53,19 @@ group :development, :test do
 
   # Rails controller testing [https://github.com/rails/rails-controller-testing]
   gem 'rails-controller-testing', group: [:test]
+   gem "bootstrap", "~> 5.2"
+
+  # Autoprefixer parses CSS and adds vendor prefixes [https://github.com/ai/autoprefixer-rails]
+  gem "autoprefixer-rails"
+
+  # Font Awesome is a popular icon set [https://fontawesome.com/]
+  gem "font-awesome-sass", "~> 6.1"
+
+  # SimpleForm is a form builder [https://github.com/heartcombo/simple_form]
+  gem "simple_form"
+
+  # SassC is a wrapper around libsass [https://github.com/sass/sassc-ruby]
+  gem "sassc-rails"
 end
 
 group :development do
@@ -66,5 +79,9 @@ group :development do
   # gem "spring"
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
-end
 
+  # Bootstrap is a popular front-end framework [https://getbootstrap.com/]
+
+end
+gem 'rspec-rails', group: [ :test ]
+gem 'rails-controller-testing', group: [ :test ]
