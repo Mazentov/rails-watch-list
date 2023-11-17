@@ -1,8 +1,7 @@
+# movie.rb
 class Movie < ApplicationRecord
-  validates :title, :overview, presence: true
+  has_many :bookmarks
   validates :title, uniqueness: true
-
-  has_many :bookmarks, dependent: :restrict_with_error
-  has_many :lists, through: :bookmarks
+  validates :title, format: { with: /(.|\s)*\S(.|\s)*/ }
+  validates :overview, format: { with: /(.|\s)*\S(.|\s)*/ }
 end
-
