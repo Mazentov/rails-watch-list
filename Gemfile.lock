@@ -225,9 +225,6 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    simple_form (5.3.0)
-      actionpack (>= 5.2)
-      activemodel (>= 5.2)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -277,7 +274,6 @@ DEPENDENCIES
   rails-controller-testing
   rspec-rails
   sassc-rails
-  simple_form
   sprockets-rails
   stimulus-rails
   turbo-rails
