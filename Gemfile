@@ -27,6 +27,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem "dotenv-rails"
 
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
@@ -63,7 +64,7 @@ group :development, :test do
   gem "font-awesome-sass", "~> 6.1"
 
   # SimpleForm is a form builder [https://github.com/heartcombo/simple_form]
-  gem "simple_form"
+  #gem "simple_form"
 
   # SassC is a wrapper around libsass [https://github.com/sass/sassc-ruby]
   gem "sassc-rails"
@@ -84,5 +85,5 @@ group :development do
   # Bootstrap is a popular front-end framework [https://getbootstrap.com/]
 
 end
-gem 'rspec-rails', group: [ :test ]
-gem 'rails-controller-testing', group: [ :test ]
+#gem 'rspec-rails', group: [ :test ]
+#gem 'rails-controller-testing', group: [ :test ]
