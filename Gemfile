@@ -64,7 +64,7 @@ group :development, :test do
   gem "font-awesome-sass", "~> 6.1"
 
   # SimpleForm is a form builder [https://github.com/heartcombo/simple_form]
-  #gem "simple_form"
+  gem "simple_form"
 
   # SassC is a wrapper around libsass [https://github.com/sass/sassc-ruby]
   gem "sassc-rails"
