@@ -46,15 +46,6 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
-
-  # RSpec is a testing framework for Ruby [https://rspec.info/]
-  gem 'rspec-rails', group: [:test]
-
-  # Rails controller testing [https://github.com/rails/rails-controller-testing]
-  gem 'rails-controller-testing', group: [:test]
    gem "bootstrap", "~> 5.2"
 
   # Autoprefixer parses CSS and adds vendor prefixes [https://github.com/ai/autoprefixer-rails]
@@ -68,6 +59,15 @@ group :development, :test do
 
   # SassC is a wrapper around libsass [https://github.com/sass/sassc-ruby]
   gem "sassc-rails"
+group :development, :test do
+  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+  gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
+
+  # RSpec is a testing framework for Ruby [https://rspec.info/]
+  gem 'rspec-rails', group: [:test]
+
+  # Rails controller testing [https://github.com/rails/rails-controller-testing]
+  gem 'rails-controller-testing', group: [:test]
 end
 
 group :development do
